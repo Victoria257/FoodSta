@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--для того щоб розмір в'юпорта відповідав реальній ширині екрану-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title lang="en">FoodSta</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="header">
+          <div class="logo">
+            <img src="./image/logo.svg" alt="Logo">
+          </div>
+
+          <div class="menu-wrapper-right">
+            <button class="button-menu" data-modal-open type="button">
+              <img src="./image/menu.svg" alt="Open-menu">
+            </button>
+            
+            <div class="modal is-hidden" data-modal>
+              <nav class="navigation">
+                <button class="modal__button-x" data-modal-close>
+                  <img src="./image/close.svg" alt="Close-menu">
+                </button>
+                <ul >
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Service</li>
+                  <li>Menu</li>
+                  <li>Contact</li>
+                </ul>
+              </nav>
+            </div>
+          
+            <div class="order-btn" >
+              <button type="button" data-modal-open>Order Now</button>
+            </div>
+
+            <div class="backdrop-order is-hidden" data-modal>
+              <div class="modal-order">
+                <button class="modal__button-order-x" data-modal-close>
+                  <svg>
+                    <use href="./image/close.svg"></use>
+                  </svg>
+                </button>
+                <form>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+       </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container hero">
+        <div>
+          <h1>Enjoy Your Favorite Food From Anywhere</h1>
+        </div>
+
+      </section>
+    </main>
+
+    
+
+   
+    <!--<script src="./js/header-button.js"></script>-->
+      
+    <script src="./js/modal.js"></script>
+  
+
+  </body>
+</html>
