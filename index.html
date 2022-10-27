@@ -37,25 +37,33 @@
                   <img src="./image/close.svg" alt="Close-menu">
                 </button>
                 <ul >
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Service</li>
-                  <li>Menu</li>
-                  <li>Contact</li>
+                  <li class="navigation-set-wrapper">
+                    <p class="navigation-set">Home</p>
+                  </li>
+                  <li class="navigation-set-wrapper">
+                    <p class="navigation-set">About</p>
+                  </li>
+                  <li class="navigation-set-wrapper">
+                    <p class="navigation-set">Service</p>
+                  </li>
+                  <li class="navigation-set-wrapper">
+                    <p class="navigation-set">Menu</p>
+                  </li>
+                  <li class="navigation-set-wrapper">
+                    <p class="navigation-set">Contact</p>
+                  </li>
                 </ul>
               </nav>
             </div>
           
             <div class="order-btn" >
-              <button type="button" data-modal-open>Order Now</button>
+              <button class="button" type="button" data-menu-open>Order Now</button>
             </div>
 
-            <div class="backdrop-order is-hidden" data-modal>
+            <div class="backdrop-order is-hidden" data-menu>
               <div class="modal-order">
-                <button class="modal__button-order-x" data-modal-close>
-                  <svg>
-                    <use href="./image/close.svg"></use>
-                  </svg>
+                <button type="button" class="modal__button-order-x" data-menu-close>
+                  <img src="./image/close.svg" alt="Close-menu">
                 </button>
                 <form>
 
@@ -77,11 +85,53 @@
       </section>
     </main>
 
+    <footer>
+      <div class="container footer-wrapper">
+        <div class="footer-menu-wrapper">
+          <div class="logo-footer-wrapper">
+            <div class="logo">
+              <img src="./image/logo.svg" alt="Logo">
+            </div>
+          </div>
+
+          <nav class="footer-navigation">
+            <ul>
+              <li class="navigation-set foter-navigation-set">Home</li>
+              <li class="navigation-set foter-navigation-set">About</li>
+              <li class="navigation-set foter-navigation-set">Service</li>
+              <li class="navigation-set foter-navigation-set">Menu</li>
+              <li class="navigation-set foter-navigation-set">Contact</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-form">
+          <h1>Subscribe</h1>
+          <form class="form">
+              <input type="email" name="email" placeholder="Enter your email" required autocomplete="email"/>
+              <button class="button" type="button ">Subscribe</button>
+          </form>
+          <p>By subscribing you agree to with our 
+            <a>Privacy Policy</a>
+          </p>
+        </div>
+
+        <div class="police-wrapper">
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Cookies Settings</a></li>
+          </ul>
+          <p>2022 FoodSta. All right reserved.</p>
+        </div>
+      </div>
+    </footer>
+
     
 
    
     <!--<script src="./js/header-button.js"></script>-->
-      
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   
 
