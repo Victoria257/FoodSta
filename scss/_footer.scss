@@ -8,14 +8,19 @@
    }
 }
 
-.footer-menu-wrapper {
-  
-   display: flex;
+.footer-envelop {
+   @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: space-between;
+   }
+}
 
+.footer-menu-wrapper {
+   display: flex;
+   height: 100%;
 }
 
 .logo-footer-wrapper {
-   outline: solid red;
 
    @media screen and (max-width: 767px) {
    width: calc(100%/2);
@@ -24,10 +29,14 @@
    @media screen and (min-width: 768px) {
       margin-right: 114px;
    }
+
+   @media screen and (min-width: 1280px) {
+      margin-right: 148px;
+   }
 }
     
 .footer-navigation {
-   outline: solid blue;
+
 
    @media screen and (max-width: 767px) {
    width: calc(100%/2);
@@ -63,6 +72,10 @@
 
 .footer-form {
    margin-top: 40px;
+
+   @media screen and (min-width: 1280px) {
+      margin-top: 0;
+   }
 } 
 
 .form {
@@ -136,7 +149,6 @@
 
 
 .police-wrapper {
-   outline: solid green;
    margin-top: 60px;
 
    @media screen and (min-width: 768px) {
@@ -144,6 +156,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+   }
+
+   @media screen and (min-width: 768px) {
+      margin-top: 80px;
    }
 
 }
