@@ -1,3 +1,5 @@
+/*-----------------------------------------BASE-------------------------------------*/
+
 ul {
 list-style: none;
 padding: 0;
@@ -52,7 +54,9 @@ body {
 
 }
 
-.header-container {
+/*-----------------------------------------HEADER------------------------------------*/
+
+.header__container {
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
@@ -66,76 +70,14 @@ body {
     padding-bottom: 10px;
    
 
-    @media screen and (max-width: 767px) {
-        position: relative;
-    }
-}
-
-.menu-wrapper-right {
-    display: flex;
-    align-items: center;
-}
-
-.navigation {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}
-
-.navigation ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-
-    @media screen and (max-width: 767px) { 
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 768px) {
-        gap: 28px;
-    }
-  
-}
-
-.navigation-set-wrapper {
-    @media screen and (max-width: 767px) {
-        width: 130px;
-        padding: 16px 10px 16px 16px;
-
-        &:active,
-        &:hover {
-            background-color: rgba(187, 243, 48, 1);
+        @media screen and (max-width: 767px) {
+            position: relative;
         }
-    }
-}
 
-.navigation-set {
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-   
-
-    @media screen and (max-width: 767px) {
-        width: 100%;
-
-    }
-
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.14;
-
-        &:active,
-        &:hover {
-            color: rgba(187, 243, 48, 1);
+        &__right {
+            display: flex;
+            align-items: center;
         }
-    }
-
-    @media screen and (min-width: 1280px) {
-        color: rgba(44, 44, 44, 1);
-    }
 
 
 }
@@ -161,60 +103,112 @@ body {
             pointer-events: none;
         }
 
-            /* @media screen and (min-width: 480px) {
-                
-            }
-        
-        @media screen and (max-height: 620px) and (orientation: landscape) {
-            max-height: 95vh;
-            overflow-y: scroll;
-        }
-    */
-    } 
-
-}
-
-
-
-.button-menu {
-    width: 28px;
-    height: 28px;
-    outline: solid none;
-    background-color: inherit;
-    border: none;
-
-    @media screen and (min-width: 768px) {
-        display: none;
     }
-}
 
-.modal__button-x {
-
-    @media screen and (max-width: 767px) {
-
-        position: absolute;
-        right: 4px;
-        top: 0;
+    &__btn {
+        width: 28px;
+        height: 28px;
+        outline: solid none;
         background-color: inherit;
-        width: 24px;
-        height: 24px;
-        padding: 6px;
         border: none;
 
-        &:hover,
-        &:focus {
-            background-color: var(--white);
-            fill: var(--blue);
+        @media screen and (min-width: 768px) {
+            display: none;
         }
     }
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }   
+    &__btn-x {
+        @media screen and (max-width: 767px) {
+        
+            position: absolute;
+            right: 4px;
+            top: 0;
+            background-color: inherit;
+            width: 24px;
+            height: 24px;
+            padding: 6px;
+            border: none;
     
+                &:hover,
+                &:focus {
+                    background-color: var(--white);
+                    fill: var(--blue);
+                }
+            }
+        
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
 }
 
-.order-btn {
+.navigation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+        &__list {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            
+                @media screen and (max-width: 767px) {
+                    flex-wrap: wrap;
+                }
+            
+                @media screen and (min-width: 768px) {
+                    gap: 28px;
+                }
+        }
+
+        &__set {
+            @media screen and (max-width: 767px) {
+                width: 130px;
+                padding: 16px 10px 16px 16px;
+            
+                    &:active,
+                    &:hover {
+                        background-color: rgba(187, 243, 48, 1);
+                    }
+                }
+        }
+
+        &__paragraf {
+            margin: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.19;
+            
+            
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+            
+                }
+            
+                @media screen and (min-width: 768px) {
+                    font-size: 14px;
+                    line-height: 1.14;
+            
+                    &:active,
+                    &:hover {
+                        color: rgba(187, 243, 48, 1);
+                    }
+                }
+            
+                @media screen and (min-width: 1280px) {
+                    color: rgba(44, 44, 44, 1);
+                }
+        }
+
+}
+
+/*----------------------------------------BUTTON "ORDER NOW"-----------------------------------*/
+
+
+.order {
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -223,230 +217,84 @@ body {
     @media screen and (min-width: 768px) {
         margin-left: 30px;
     }
-}
 
-.button {
-
-
-    background-color: rgba(187, 243, 48, 1);
-    border-radius: 30px;
-    border: none;
-    padding: 6px 18px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    color: rgba(44, 44, 44, 1);
-  
-
-}
-
-.hero {
-   padding-top: 60px;
-}
-
-/*-------------------------------------------------------ORDER-MENU--------------------------------------*/
-@media screen and (max-width: 767px) {
-    .backdrop-order {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    .backdrop-order {
-
-        position: fixed;
-        z-index: 6;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(94, 99, 99, 0.7);
-        overflow-y: scroll;
-
-        &.is-hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-    }
-
-    .modal-order {
-        position: absolute;
-        z-index: 7;
-        top: 50%;
-        left: 50%;
-        transform: scale(1) translate(-50%, -50%);
-        width: 458px;
-        height: 449px;
-        background-color: rgba(255, 229, 80, 1);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-        border-radius: 30px;
-
-    }
-
-    .modal__button-order-x {
-        position: absolute;
-        z-index: 8;
-        right: 8px;
-        top: 8px;
-        width: 32x;
-        height: 32px;
-        padding: 4px;
-        border-radius: 50%;
-        border: none;
-        background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-
-    }
-
-
-    /*.form {
-        display: inline-block;
-        width: 100%;
-    }
-
-    .form-set {
-        display: block;
-        margin-top: 2px;
-    }
-
-    .form-set__item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1, 17px;
-        letter-spacing: 0.01em;
-        color: var(--pargraf-text-color);
-    }
-
-    .form-set__textarea {
-        resize: none;
-        padding: 11px 16px;
-
-        &::placeholder {
+        &__button {
+        
+        
+            background-color: rgba(187, 243, 48, 1);
+            border-radius: 30px;
+            border: none;
+            padding: 6px 18px;
+        
             font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.01em;
-            color: rgba(117, 117, 117, 0.5);
-        }
-    }
-
-    .form-set__input,
-    .form-set__textarea {
-        margin-top: 4px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
-    }
-
-    .form-set__input {
-        height: 40px;
-        padding-left: 42px;
-    }
-
-    .form-set__input:focus,
-    .form-set__textarea:focus {
-        border: 1px solid var(--blue);
-    }
-
-    .form-set__input:focus+.form-set__icon {
-        fill: var(--blue);
-    }
-
-
-    .form-set__icon {
-        width: 18px;
-        position: absolute;
-        z-index: 2;
-        left: 12px;
-        top: -65%;
-        fill: var(--title-text-color);
-    }
-
-    .license {
-        position: relative;
-        margin-top: 20px;
-
-
-        &__box {
-            display: flex;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 1.5;
+            color: rgba(44, 44, 44, 1);
+        
+        
         }
 
-        &__checkbox {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            border: 0;
-            padding: 0;
-            clip: rect(0 0 0 0);
-            overflow: hidden;
-
-        }
-
-        &__text {
-            margin-left: 24px;
-        }
-
-        &__icon {
-
-            position: absolute;
-            left: 1px;
-            top: 0px;
-            content: "";
-            width: 16px;
-            height: 15px;
-            border: 2px solid var(--title-text-color);
-            border-radius: 10%;
-
-            .license__checkbox:checked~& {
-                background-image: url(../images/icons.svg/icon-check.svg);
-                background-size: contain;
-                background-origin: border-box;
-                border-color: transparent;
+        &__backdrop {
+            @media screen and (max-width: 767px) {
+                display: none;
             }
 
+            @media screen and (min-width: 768px) {
+                
+                position: fixed;
+                z-index: 6;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(94, 99, 99, 0.7);
+                overflow-y: scroll;
+        
+                    &.is-hidden {
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                
+                
+            }
         }
 
-    }
+        &__modal {
+            @media screen and (min-width: 768px) {
+                position: absolute;
+                z-index: 7;
+                top: 50%;
+                left: 50%;
+                transform: scale(1) translate(-50%, -50%);
+                width: 458px;
+                height: 449px;
+                background-color: rgba(255, 229, 80, 1);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+                border-radius: 30px;
+            }
+        }
+
+        &__btn-x {
+
+            @media screen and (min-width: 768px) {
+
+                position: absolute;
+                z-index: 8;
+                right: 8px;
+                top: 8px;
+                width: 32x;
+                height: 32px;
+                padding: 4px;
+                border-radius: 50%;
+                border: none;
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            }
+        }
+}
 
 
-    .license__link {
-        text-decoration: underline;
-        color: var(--blue);
-    }
-
-    .form__button-box {
-        text-align: center;
-    }
-
-    .form__button {
-        margin-top: 30px;
-        padding: 10px 52px;
-        background-color: var(--blue);
-        color: var(--white);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-    }
-    */
+.hero {
+    padding-top: 60px;
 }

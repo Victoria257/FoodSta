@@ -20,49 +20,49 @@
   </head>
   <body>
     <header>
-      <div class="container header-container">
+      <div class="container header__container">
         <div class="header">
           <div class="logo">
             <img src="./image/logo.svg" alt="Logo">
           </div>
 
-          <div class="menu-wrapper-right">
-            <button class="button-menu" data-modal-open type="button">
+          <div class="header__right">
+            <button class="modal__btn" data-modal-open type="button">
               <img src="./image/menu.svg" alt="Open-menu">
             </button>
             
             <div class="modal is-hidden" data-modal>
               <nav class="navigation">
-                <button class="modal__button-x" data-modal-close>
+                <button class="modal__btn-x" data-modal-close>
                   <img src="./image/close.svg" alt="Close-menu">
                 </button>
-                <ul >
-                  <li class="navigation-set-wrapper">
-                    <p class="navigation-set">Home</p>
+                <ul class="navigation__list">
+                  <li class="navigation__set">
+                    <p class="navigation__paragraf">Home</p>
                   </li>
-                  <li class="navigation-set-wrapper">
-                    <p class="navigation-set">About</p>
+                  <li class="navigation__set">
+                    <p class="navigation__paragraf">About</p>
                   </li>
-                  <li class="navigation-set-wrapper">
-                    <p class="navigation-set">Service</p>
+                  <li class="navigation__set">
+                    <p class="navigation__paragraf">Service</p>
                   </li>
-                  <li class="navigation-set-wrapper">
-                    <p class="navigation-set">Menu</p>
+                  <li class="navigation__set">
+                    <p class="navigation__paragraf">Menu</p>
                   </li>
-                  <li class="navigation-set-wrapper">
-                    <p class="navigation-set">Contact</p>
+                  <li class="navigation__set">
+                    <p class="navigation__paragraf">Contact</p>
                   </li>
                 </ul>
               </nav>
             </div>
           
-            <div class="order-btn" >
-              <button class="button" type="button" data-menu-open>Order Now</button>
+            <div class="order" >
+              <button class="order__button" type="button" data-menu-open>Order Now</button>
             </div>
 
-            <div class="backdrop-order is-hidden" data-menu>
-              <div class="modal-order">
-                <button type="button" class="modal__button-order-x" data-menu-close>
+            <div class="order__backdrop is-hidden" data-menu>
+              <div class="order__modal">
+                <button type="button" class="order__btn-x" data-menu-close>
                   <img src="./image/close.svg" alt="Close-menu">
                 </button>
                 <form>
@@ -85,46 +85,46 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container footer-wrapper">
-        <div class="footer-envelop">
-          <div class="footer-menu-wrapper">
-            <div class="logo-footer-wrapper">
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__envelop">
+          <div class="menu">
+            <div class="menu__logo">
               <div class="logo">
                 <img src="./image/logo.svg" alt="Logo">
               </div>
             </div>
 
-            <nav class="footer-navigation">
-              <ul>
-                <li class="navigation-set foter-navigation-set">Home</li>
-                <li class="navigation-set foter-navigation-set">About</li>
-                <li class="navigation-set foter-navigation-set">Service</li>
-                <li class="navigation-set foter-navigation-set">Menu</li>
-                <li class="navigation-set foter-navigation-set">Contact</li>
+            <nav class="menu__navigation">
+              <ul class="menu__list">
+                <li class="navigation__paragraf menu__set">Home</li>
+                <li class="navigation__paragraf menu__set">About</li>
+                <li class="navigation__paragraf menu__set">Service</li>
+                <li class="navigation__paragraf menu__set">Menu</li>
+                <li class="navigation__paragraf menu__set">Contact</li>
               </ul>
             </nav>
           </div>
 
-          <div class="footer-form">
-            <h1>Subscribe</h1>
-            <form class="form">
-                <input type="email" name="email" placeholder="Enter your email" required autocomplete="email"/>
+          <div class="form">
+            <h1 class="form__title">Subscribe</h1>
+            <form class="form__wrapper">
+                <input class="form__input" type="email" name="email" placeholder="Enter your email" required autocomplete="email"/>
                 <button class="button" type="button ">Subscribe</button>
             </form>
-            <p>By subscribing you agree to with our 
-              <a>Privacy Policy</a>
+            <p class="form__paragraf">By subscribing you agree to with our 
+              <a class="form__link">Privacy Policy</a>
             </p>
           </div>
         </div>
 
-        <div class="police-wrapper">
-          <ul>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Terms of Service</a></li>
-            <li><a href="">Cookies Settings</a></li>
+        <div class="police">
+          <ul class="police__list">
+            <li><a class="police__link" href="">Privacy Policy</a></li>
+            <li><a class="police__link" href="">Terms of Service</a></li>
+            <li><a class="police__link" href="">Cookies Settings</a></li>
           </ul>
-          <p>2022 FoodSta. All right reserved.</p>
+          <p class="police__paragraf">2022 FoodSta. All right reserved.</p>
         </div>
       </div>
     </footer>
