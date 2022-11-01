@@ -17,6 +17,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
   </head>
   <body>
     <header>
@@ -56,8 +61,8 @@
               </nav>
             </div>
           
-            <div class="order" >
-              <button class="order__button" type="button" data-menu-open>Order Now</button>
+            <div class="order order-header" >
+              <button class="order__button order__button-header" type="button" data-menu-open>Order Now</button>
             </div>
 
             <div class="order__backdrop is-hidden" data-menu>
@@ -73,13 +78,73 @@
 
           </div>
        </div>
+
       </div>
+
     </header>
 
     <main>
       <section class="container hero">
-        <div>
-          <h1>Enjoy Your Favorite Food From Anywhere</h1>
+   
+        <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+
+        <div class="hero__wrapper">
+          <div class="hero__wrapper-left">
+            <p class="hero__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+              cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+            </p>
+            <div class="order__wrapper-hero">
+              <div class="order ">
+                <button class="order__button order__button-hero" type="button" data-menu-open>Order Now</button>
+              </div>
+              
+              <div class="order__backdrop is-hidden" data-menu>
+                <div class="order__modal">
+                  <button type="button" class="order__btn-x" data-menu-close>
+                    <img src="./image/close.svg" alt="Close-menu">
+                  </button>
+                  <form>
+              
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="slick" id="feedback">
+            <h2 class="visually-hidden">feedback</h2>
+            <div class="container-slick">
+<!--
+              <ul class="slik__list one-time">
+                <li class="slik__set">
+                    <div class="slik__tumb">
+                      <img src="./image/plate-slider/border-tablet.png" alt="">
+                    </div>
+                  </li>
+                <li class="slik__set">
+                  -->
+                  <div class="slik__tumb">
+                    <img src="./image/plate-slider/plate-1-tablet.png" width="320px" alt="">
+                  </div>
+                  <!--
+                </li>
+                <li class="slik__set">
+                  <div class="slik__tumb">
+                    <img src="./image/plate-slider/plate-2-tablet.png" alt="">
+                  </div>
+                  </li>
+                <li class="slik__set">
+                  <div class="slik__tumb">
+                    <img src="./image/plate-slider/plate-3-tablet.png" alt="">
+                  </div>
+                </li>
+              </ul>
+              -->
+            </div>
+          </div>
+
         </div>
 
       </section>
@@ -126,6 +191,61 @@
           </ul>
           <p class="police__paragraf">2022 FoodSta. All right reserved.</p>
         </div>
+
+        <div class="team">
+          <div>
+            <button class="team__btn" type="button" data-team-open>Team</button>
+          </div>
+          
+          <div class="team__backdrop is-hidden" data-team>
+            <div class="team__modal">
+              <button type="button" class="team__btn-x" data-team-close>
+                <img src="./image/close.svg" alt="Close-menu">
+              </button>
+
+              <di>
+                <ul class="team__list">
+                  <li class="team__set">
+                    <div class="team__thumb">
+                      <img src="./image/plate-slider/border-tablet.png" width="100" alt="">
+                    </div>
+                    <h2 class="team__title">Varvara</h2> 
+                    <p class="team__name">Team lead</p>
+                    <p class="team__paragraph"></p>
+                  </li>
+                  <li class="team__set">
+                    <div class="team__thumb">
+                      <img src="./image/team/6.jpg" width="100" alt="">
+                    </div>
+                    <h2 class="team__title">Viktoria Bezpalova</h2>
+                    <p class="team__name">Full Stack Developer</p>
+                    <p class="team__paragraph">Create this modal and create modal with form for batton "Order now"<br> (Створила це модальне вікно, а також модальне вікно з формою для кнопки "Order now"</p>
+                  </li>
+                  <li class="team__set">
+                    <div class="team__thumb">
+                      <img src="./image/team/4.jpg" width="100" alt="">
+                    </div>
+                    <h2 class="team__title">Mariia Chernokulska</h2>
+                    <p class="team__name">Full Stack Developer</p>
+                    <p class="team__paragraph">Create Header<br>(Створила розділ Header)</p>
+                  </li>
+                  
+                  <li class="team__set">
+                    <div class="team__thumb">
+                      <img src="./image/team/5.jpg" width="100" alt="">
+                    </div>
+                    <h2 class="team__title">Mariia Chernokulska</h2>
+                    <p class="team__name">Full Stack Developer</p>
+                    <p class="team__paragraph">Create Header<br>(Створила розділ Header)</p>
+                  </li>
+                </ul>
+
+              </di>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </footer>
 
@@ -133,9 +253,16 @@
 
    
     <!--<script src="./js/header-button.js"></script>-->
+    <script src="./js/team.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/slik.js"></script>
   
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,73 @@
+.hero {
+    padding-top: 60px;
+    padding-bottom: 25px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: -108px;
+        }
+   
+
+    &__wrapper {
+    
+        display: flex;
+     
+    }
+
+    &__wrapper-left {
+        margin-top: 28px;
+        outline: solid green;
+
+            @media screen and (min-width: 768px) and (max-width: 1279px){
+                margin-right: 32px;
+                width: calc((100% - 32px)/2);
+            }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+
+            @media screen and (min-width: 768px) {
+                font-size: 42px;
+                margin-right: 167px;
+            }
+        
+    }
+
+    &__paragraph {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+
+            @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
+    }
+
+}
+
+.order__wrapper-hero {
+    margin-top: 28px;
+}
+
+/*---------------------------------------СЛАЙДЕР------------------------------------*/
+.slik {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.container-slick {
+  outline: solid red;
+    width: 336px;
+    @media screen and (max-width: 767px) {
+            display: none;
+        
+    }
+ 
+}
+.slik__tumb img {
+    outline: solid blue;
+   
+}
